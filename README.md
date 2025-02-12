@@ -1,7 +1,7 @@
 # 訂單管理系統 (Order Management System)
 
 ## 📌 介紹
-本專案是一個基於 **Java Swing** 和 **JDBC** 開發的簡單訂單管理系統，支援 **CRUD 操作**（新增、更新、刪除、查詢訂單），並提供 **即時時間顯示** 和 **使用者登入資訊**。  
+本專案是一個基於 **Java JFrame** 和 **JDBC** 開發的簡單訂單管理系統，支援 **CRUD 操作**（新增、更新、刪除、查詢訂單），並提供 **即時時間顯示** 和 **使用者登入資訊**。  
 
 ---
 
@@ -18,11 +18,12 @@
 ---
 
 ## 🛠 專案結構
-- 📂 **sql** - MySQL 建立資料庫的 SQL 檔案
 - 📂 **src** - 程式碼目錄
   - 📂 **dao** - 資料庫存取層 (`OrderDAO.java`)
   - 📂 **model** - 資料模型 (`Order.java`, `User.java`)
-  - 📂 **view** - GUI 介面 (`OrderFrame.java`, `LoginFrame.java`, `RegisterFrame.java`)
+  - 📂 **contoller** - GUI 介面 (`OrderFrame.java`, `LoginFrame.java`, `RegisterFrame.java`)
   - 📂 **util** - 共用功能
+- 📂 **sql** - MySQL 建立資料庫的 SQL 檔案
+- 📜 **FruitOrder.jar** - 可執行的 JAR 檔案
 - 📜 **README.md** - 本文件
 
