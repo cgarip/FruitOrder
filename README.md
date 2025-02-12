@@ -9,7 +9,7 @@
 ✅ **使用者登入**：顯示當前登入者資訊（姓名、電話、Email）  
 ✅ **新增訂單**：輸入水果名稱、數量、價格，點擊「新增」按鈕儲存至資料庫  
 ✅ **更新訂單**：選擇現有訂單，修改後點擊「更新」按鈕  
-✅ **刪除訂單**：點擊 **每筆訂單最左側的刪除按鈕** 直接刪除訂單  
+✅ **刪除訂單**：選擇現有訂單，修改後點擊「刪除」按鈕   
 ✅ **清空輸入欄位**：點擊「清空」按鈕可快速清除所有輸入欄位  
 ✅ **列印訂單列表**：支援列印整個訂單表格  
 ✅ **即時時間顯示**：右上角顯示當前時間，每秒自動更新  
@@ -17,28 +17,11 @@
 
 ---
 
-## 🛠 技術棧
-- **程式語言**：Java  
-- **GUI 框架**：Swing  
-- **資料庫**：MySQL（可更改為其他 SQL 資料庫）  
-- **JDBC 連接**：使用 `OrderDAO` 進行資料庫操作  
+## 🛠 專案結構
+📂 src
+ ┣ 📂 dao              # 資料庫操作 (OrderDAO.java)
+ ┣ 📂 model            # 數據模型 (Order.java, User.java)
+ ┣ 📂 controller       # GUI 介面 (OrderFrame.java, LoginFrame.java, RegisterFrame.java)
+ ┣ 📂 util             # 共用功能
+ ┣ 📜 README.md        # 本文件
 
----
-
-## 💻 環境設定
-### 1️⃣ 安裝 Java & MySQL
-請確保已安裝 **Java 8+** 以及 **MySQL**。
-
-### 2️⃣ 設定資料庫
-在 MySQL 建立資料表：
-```sql
-CREATE DATABASE order_management;
-USE order_management;
-
-CREATE TABLE orders (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    fruit_name VARCHAR(100) NOT NULL,
-    quantity INT NOT NULL,
-    price DOUBLE NOT NULL,
-    user_id INT NOT NULL
-);
