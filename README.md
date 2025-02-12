@@ -19,11 +19,11 @@
 
 ## 🛠 專案結構
 - 📂 **src** - 程式碼目錄
-  - 📂 **dao** - 資料庫存取層 (`OrderDAO.java`)
-  - 📂 **model** - 資料模型 (`Order.java`, `User.java`)
-  - 📂 **contoller** - GUI 介面 (`OrderFrame.java`, `LoginFrame.java`, `RegisterFrame.java`)
+  - 📂 **dao** - 資料庫存取層
+  - 📂 **model** - 資料模型
+  - 📂 **contoller** - GUI 介面
   - 📂 **util** - 共用功能
 - 📂 **sql** - MySQL 建立資料庫的 SQL 檔案
 - 📜 **FruitOrder.jar** - 可執行的 JAR 檔案
-- 📜 **README.md** - 本文件
+- 📜 **README.md**
 
