@@ -18,10 +18,11 @@
 ---
 
 ## 🛠 專案結構
-📂 src
- ┣ 📂 dao              # 資料庫操作 (OrderDAO.java)
- ┣ 📂 model            # 數據模型 (Order.java, User.java)
- ┣ 📂 controller       # GUI 介面 (OrderFrame.java, LoginFrame.java, RegisterFrame.java)
- ┣ 📂 util             # 共用功能
- ┣ 📜 README.md        # 本文件
+- 📂 **sql** - MySQL 建立資料庫的 SQL 檔案
+- 📂 **src** - 程式碼目錄
+  - 📂 **dao** - 資料庫存取層 (`OrderDAO.java`)
+  - 📂 **model** - 資料模型 (`Order.java`, `User.java`)
+  - 📂 **view** - GUI 介面 (`OrderFrame.java`, `LoginFrame.java`, `RegisterFrame.java`)
+  - 📂 **util** - 共用功能
+- 📜 **README.md** - 本文件
 
